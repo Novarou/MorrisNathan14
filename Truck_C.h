@@ -6,7 +6,7 @@
 class Truck_C : public Vehicle_C
 {
 private:
-	int towCap;
+	int towCap =0;
 
 public:
 	Truck_C();

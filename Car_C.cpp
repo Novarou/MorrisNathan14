@@ -2,30 +2,34 @@
 
 Car_C::Car_C()
 {
+	doors = 0;
 }
 
-Car_C::Car_C(int)
+Car_C::Car_C(int dr) : Vehicle_C()
 {
+	doors = dr;
 }
 
-Car_C::Car_C(int, string, string)
+Car_C::Car_C(int dr, string man, string DB) : Vehicle_C(man,DB)
 {
+	doors = dr;
 }
 
 int Car_C::Get_Doors() const
 {
-	return 0;
+	return doors;
 }
 
-void Car_C::Set_Doors(int)
+void Car_C::Set_Doors(int dr)
 {
+	doors = dr;
 }
 
 void Car_C::Display_Data() const
 {
-	cout << "Car Information: \n";
-	cout << "Manufacturer: " << Get_Manufactor();
-	cout << "Year Built: " << Get_Date_Built();
-	cout << "Number of Doors: " << Get_Doors();
+	cout << "\n\nCar Information: ";
+	cout << "\nManufacturer: " << Get_Manufactor();
+	cout << "\nYear Built: " << Get_Date_Built();
+	cout << "\nNumber of Doors: " << Get_Doors();
 
 }

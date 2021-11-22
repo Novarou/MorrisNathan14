@@ -6,7 +6,7 @@
 class Car_C : public Vehicle_C
 {
 private:
-	int doors;
+	int doors = 0;
 
 public :
 	Car_C();

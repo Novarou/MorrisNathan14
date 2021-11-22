@@ -47,7 +47,7 @@ int main()
 	t1.Set_Date_Built(yrBuilt);
 
 	cout << "Enter The towing capacity for the Third Vehicle: ";
-	cin >> numDoor;
+	cin >> tCap;
 	t1.Set_Tow_Cap(tCap);
 
 	Display_Data(v1);

@@ -2,29 +2,33 @@
 
 Truck_C::Truck_C()
 {
+	towCap = 0;
 }
 
-Truck_C::Truck_C(int)
+Truck_C::Truck_C(int TC) : Vehicle_C()
 {
+	towCap = TC;
 }
 
-Truck_C::Truck_C(int, int, string, string)
+Truck_C::Truck_C(int TC, int DR, string man, string DB)
 {
+	towCap = TC;
 }
 
 int Truck_C::Get__Tow_Cap() const
 {
-	return 0;
+	return towCap;
 }
 
-void Truck_C::Set_Tow_Cap(int)
+void Truck_C::Set_Tow_Cap(int TC)
 {
+	towCap = TC;
 }
 
 void Truck_C::Display_Data() const
 {
-	cout << "Truck Information: \n";
-	cout << "Manufacturer: " << Get_Manufactor();
-	cout << "Year Built: " << Get_Date_Built();
-	cout << "Towing Capacity: " << Get__Tow_Cap();
+	cout << "\n\nTruck Information: ";
+	cout << "\nManufacturer: " << Get_Manufactor();
+	cout << "\nYear Built: " << Get_Date_Built();
+	cout << "\nTowing Capacity: " << Get__Tow_Cap();
 }
